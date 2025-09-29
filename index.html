@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="https://png.pngtree.com/png-clipart/20230818/original/pngtree-heart-logo-design-vector-template-isolated-sign-logo-vector-picture-image_11023882.png" />
     <title>Surat Valentine</title>
     <style>
         body {
@@ -69,10 +70,18 @@
         .container:hover .card {
             transform: translateY(-30px);
         }
-        .card h3 {
-            color: red;
-            margin: 0;
+
+        /* Header dengan logo hati */
+        .card-header {
+            display: flex;
+            align-items: center;
+            gap: 8px; /* jarak antara hati dan teks */
+            justify-content: center;
         }
+        .card-header .logo {
+            font-size: 1.5em; /* ukuran hati */
+        }
+
         .card p {
             font-style: italic;
             margin: 10px 0;
@@ -98,10 +107,12 @@
 <body>
     <div class="container">
         <div class="card">
-            <h3>A Letter to My Valentine</h3>
+            <div class="card-header">
+                <span class="logo">❤️</span>
+                <h3>A Letter to My Valentine</h3>
+            </div>
             <p>"Loved you yesterday, love you still, always have, always will."</p>
             <button onclick="window.location.href='kocak.html'">Buka Surat</button>
-
         </div>
         <div class="envelope"></div>
     </div>
